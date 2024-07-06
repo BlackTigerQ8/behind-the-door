@@ -1,0 +1,1 @@
+Congratulations! You've found the flag: CTF{hidden_flag_12345}
