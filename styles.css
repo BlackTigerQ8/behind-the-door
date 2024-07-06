@@ -18,3 +18,21 @@ h1 {
 p {
   font-size: 1.5rem;
 }
+
+button {
+  padding: 0.75rem 4rem;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #61dafb;
+  color: #000;
+  border-radius: 25px;
+  box-shadow: 10px 5px 5px black;
+}
+
+button:hover {
+  background-color: antiquewhite;
+  transform: scale(1.1);
+  transition: ease-in-out 0.25s;
+}
