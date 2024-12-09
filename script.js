@@ -1,12 +1,11 @@
-console.log("Front-end is not the right place!");
-console.log("Try somewhere else!");
+console.log(
+  "Sometimes, what you seek lies beyond the surface. 🗝️ #Hint: Dig deeper into structures often ignored."
+);
 
 let btn = document.querySelector("button");
 
 const flag = () => {
-  console.log(
-    "The flag is hiding somewhere, normally the favorite place to hide is a text file with the name flag."
-  );
+  console.log("Knock Knock!! ");
 };
 
 btn.addEventListener("click", flag);

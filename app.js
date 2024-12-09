@@ -6,7 +6,7 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, "public")));
 
 // Route to serve the flag file
-app.get("/flag.txt", (req, res) => {
+app.get("/admin/flag.txt", (req, res) => {
   res.sendFile(path.join(__dirname, "flag.txt"));
 });
 
