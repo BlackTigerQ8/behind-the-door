@@ -5,9 +5,14 @@ const path = require("path");
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, "public")));
 
-// Route to serve the flag file
-app.get("/admin/flag.txt", (req, res) => {
-  res.sendFile(path.join(__dirname, "flag.txt"));
+// Secret route to serve the flag file
+app.get("/coded/:secret", (req, res) => {
+  const secretKey = "flag123";
+  if (req.params.secret === secretKey) {
+    res.sendFile(path.join(__dirname, "coded", "flag.txt"));
+  } else {
+    res.status(404).send("Not Found");
+  }
 });
 
 // Start the server
